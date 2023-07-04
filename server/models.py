@@ -29,5 +29,5 @@ class BakedGood(db.Model, SerializerMixin):
     created_at = db.Column(db.DateTime, server_default=db.func.now())
     updated_at = db.Column(db.DateTime, server_default=db.func.now())
 
-    serialize_rules = ('-bakery.baked_goods')
+    serialize_rules = ('-bakery.baked_goods',)
     
